@@ -2,6 +2,7 @@ FROM servergurus/ubuntu-jdk8
 MAINTAINER Prasanjit Singh <nixgurus@gmail.com>
 
 # setup WildFly 
+RUN mkdir -p /opt/wildfly/standalone/deployments/
 COPY wildfly-8.2.0.Final /opt/wildfly
 
 # install example app on wildfy
